@@ -16,6 +16,59 @@ body {
   color: #000;
  }
 
+h1 {
+  font-family: 'Anton', sans-serif;
+  background: rgba(105,110,106,0.4);
+  position: relative;
+  text-align: center;
+}
+
 .main-pic {
-  font-size: 12pt;
+  width: 200px;
+  height: 200px;
+  margin-left: 515px;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: rgba(105,110,106,0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 10px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 28px;
+  color: #111;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+
+.hamburger {
+  margin-top: auto;
+  margin-left: 0.5em;
+
+}
+
+@media only screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }
