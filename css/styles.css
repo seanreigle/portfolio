@@ -105,7 +105,5 @@ h1 {
 }
 
 @media (min-width: 768px) {
-  .hamburger {
-      display: none;
- }
+  .hamburger {display: none}
 }
