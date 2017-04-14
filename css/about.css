@@ -9,3 +9,79 @@ body {
   color: #000;
   width: 100%;
  }
+
+ .sidenav {
+   height: 100%;
+   width: 0;
+   position: absolute;
+   z-index: 1;
+   top: 0;
+   right: 0;
+   background: rgba(105,110,106,0.9);
+   overflow-x: hidden;
+   transition: 0.5s;
+   padding-top: 3vw;
+ }
+
+ .sidenav a {
+   padding: 10px 8px 8px 32px;
+   text-decoration: none;
+   font-size: 28px;
+   color: #FCFBE3;
+   display: block;
+   transition: 0.3s;
+   line-height: 1.5em;
+ }
+
+ .sidenav a:hover, .offcanvas a:focus{
+   color: #f1f1f1;
+ }
+
+ .sidenav .closebtn {
+   position: absolute;
+   top: 0;
+   right: 25px;
+   font-size: 36px;
+ }
+
+ .hamburger {
+   margin-left: 0.5em;
+   font-size: 3.3vw;
+   cursor: pointer;
+   color: #000;
+   position: absolute;
+   top: 0.8em;
+   right: 0.8em;
+   display: inline-block;
+ }
+
+ .social-media {
+   text-align: center;
+   font-size: 1.7em;
+   padding-top: 2em;
+ }
+
+ .fa-linkedin-square {
+   color: #8EA9B9;
+ }
+
+ .fa-github {
+   color: #8EA9B9;
+ }
+
+ footer {
+   text-align: center;
+   padding-top: 0.4em;
+   color: #32373B;
+   font-size: 0.8em;
+ }
+
+ /*@media (min-width: 300px) {
+   .hamburger {display: inline-block;}
+   .sidenav {display: inline-block;}
+ }
+
+ @media (min-width: 768px) {
+   .hamburger {display: none;}
+   .sidenav {display: inline-block;}
+ }*/
