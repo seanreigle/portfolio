@@ -1,13 +1,11 @@
 'use strict';
 
-$('.hamburger').click(function() {
-  $(this).hide();
-  $('.cross').show();
-  $('.menu').slideToggle();
-});
-
-$('.cross').click(function() {
-  $(this).hide();
-  $('.hamburger').show();
-  $('.menu').slideToggle();
-});
+	$("#nav").addClass("js").before('<div id="menu">&#9776;</div>');
+	$("#menu").click(function(){
+		$("#nav").toggle();
+	});
+	$(window).resize(function(){
+		if(window.innerWidth > 768) {
+			$("#nav").removeAttr("style");
+		}
+	});
