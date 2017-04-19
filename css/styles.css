@@ -28,6 +28,16 @@ h1 {
   font-size: 4em;
   padding-top: 0.3em;
   padding-bottom: 0.3em;
+  border: 0.01em solid black;
+}
+
+.background {
+  text-align: center;
+}
+
+.background img {
+  width: 50%;
+  border: 0.2em solid black;
 }
 
 .nicknames {
@@ -38,7 +48,6 @@ h1 {
   background-color: #E8E8E8
   color: #333333;
   font-size: 2em;
-
 }
 
 .middle {
@@ -52,15 +61,6 @@ h1 {
   padding-right: 0.5em;
   padding-bottom: 0.5em;
   padding-top: 0.5em;
-}
-
-.main-pic {
-  width: 16em;
-  height: 18em;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0, 0, 0, 0;
 }
 
 .social-media {
@@ -85,13 +85,16 @@ ul {
   padding: 1em;
   border-radius: 4em;
   border: 0.1em solid black;
+  text-align: center;
 }
 
 li {
   width:20%;
   float:left;
-  border-right: 1px solid #eeee
-
+  border-right: 1px solid #eeee;
+  display: inline;
+  list-style: none;
+  text-align: center;
 }
 
 li:last-child {
@@ -105,9 +108,10 @@ li a {
   padding: 4% 10%;
   font-size: 1.1em;
   text-decoration: none;
+  text-align: center;
 }
 
-@media screen and (max-width: 768px) {
+@media screen (max-width: 767px) {
   #menu {
     width:1.4em;
     display: block;
@@ -115,9 +119,9 @@ li a {
     font-size:1.35em;
     text-align: center;
   }
+
   #nav.js {
     display: none;
-
   }
 
   ul {
@@ -128,60 +132,70 @@ li a {
   li {
     width:100%;
     border-right:none;
+    text-align: center;
   }
 }
 
-nav{
+nav {
+  position: absolute;
   width: 100%;
+  text-align: center;
 }
 
 nav ul li:hover > ul {
 	display: block;
-	}
+}
 
 nav ul {
-	background-color: #FFF;
-	background: linear-gradient(#FFF 0%, #bbbbbb 100%);
-	box-shadow: 0px 0px 9px rgba(0,0,0,0.15);
-	padding: 0 0 0 0;
-  width: 70vw;
-  border-radius: 23pt;
-  border: 1px solid black;
+	/*background: linear-gradient(#FFF 0%, #bbbbbb 100%);*/
+	/*box-shadow: 0px 0px 9px rgba(0,0,0,0.15);*/
   position: relative;
-  margin-top: 1em;
+	padding: 0 0 0 0;
+  border: 1px solid black;
+  margin-top: 0.7em;
+  text-align: center;
 }
 
 nav ul:after {
 	content: ""; clear: both; display: block;
-	}
-
-nav ul li {
-	float: left;
 }
 
 nav ul li:hover {
   color:inherit;
-	background: #8EA9B9;
-	background: linear-gradient(#8EA9B9 0%, #5f6975 40%);
-  border-top-left-radius:30px;
-  border-bottom-left-radius:30px;
-  border-top-right-radius:30px;
-  border-bottom-right-radius:30px;
+	background: #BCC6CC;
+	background: linear-gradient(#BCC6CC 0%, #5f6975 40%);
+  border-top-left-radius:28vw;
+  border-bottom-left-radius:28vw;
+  border-top-right-radius:28vw;
+  border-bottom-right-radius:28vw;
 }
 
 nav ul li:hover a {
   background-color: inherit;
   color: #FFF;
+  text-align: center;
 }
 
 nav ul li a {
   background-color: inherit;
-	display: block; padding: 25px 40px;
-	color: #757575; text-decoration: none;
+	display: block;
+  padding: 25px 40px;
+	color: #757575;
+  text-decoration: none;
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 767px) {
   #menu {
     display: none;
   }
+
+  @media (max-width: 480px) {
+    .h1 {
+      font-size: 12pt;
+    }
+  }
+
+footer h3 {
+  text-align: center;
+  padding-top: 0.5em;
 }
