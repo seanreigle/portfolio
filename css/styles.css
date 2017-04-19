@@ -25,7 +25,7 @@ h1 {
   position: relative;
   margin-top: 0.3em;
   text-align: center;
-  font-size: 4em;
+  font-size: 5.9vw;
   padding-top: 0.3em;
   padding-bottom: 0.3em;
   border: 0.01em solid black;
@@ -46,8 +46,8 @@ h1 {
   text-align: center;
   padding-top: 1em;
   background-color: #E8E8E8
-  color: #333333;
-  font-size: 2em;
+  color: #333;
+  font-size: 4vw;
 }
 
 .middle {
@@ -189,13 +189,11 @@ nav ul li a {
     display: none;
   }
 
-  @media (max-width: 480px) {
-    .h1 {
-      font-size: 12pt;
-    }
-  }
-
-footer h3 {
+.footer h3 {
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 0.5em;
+  font-size: 0.1vw;
+  display: inline-block;
 }
