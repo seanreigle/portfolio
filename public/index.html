@@ -14,6 +14,16 @@
     <script src="https://use.fontawesome.com/3204beeee3.js"></script>
   </head>
   <body>
+
+    <script id="article-template" type="text/x-handlebars-template">
+      <h2 id="title">{{title}}</h2>
+      <a href="{{link}}"><img src="{{image}}" alt=""></a>
+      <div class="byline">
+      Deployed on - <time pubdate datetime="2000-01-01">{{deployedOn}}</time>
+      </div>
+      <section class="article-body">{{body}}</section>
+    </script>
+
     <header class="main-header">
       <section class="main-h1">
         <h1 class="h1">Sean<span class="middle">Edward</span>Reigle</h1>
@@ -54,6 +64,7 @@
     </footer>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
   <script src="js/app.js"></script>
   </body>
 </html>
