@@ -6,14 +6,27 @@
     <title>Portfolio</title>
     <link href="https://fonts.googleapis.com/css?family=Rye" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/layout.css">
     <script src="https://use.fontawesome.com/3204beeee3.js"></script>
+
   </head>
   <body>
+
+    <script id="article-template" type="text/x-handlebars-template">
+      <h2 id="title">{{title}}</h2>
+      <a href="{{link}}"><img src="{{image}}" alt=""></a>
+      <div class="byline">
+      Deployed on - <time pubdate datetime="2000-01-01">{{deployedOn}}</time>
+      </div>
+      <section class="article-body">{{body}}</section>
+    </script>
+
     <header class="main-header">
       <section class="main-h1">
         <h1 class="h1">Sean<span class="middle">Edward</span>Reigle</h1>
@@ -31,29 +44,25 @@
     </nav>
     <section>
       <div class="about">
-        <h2 id="about">About Me</h2>
+        <h2 id="about_me">About Me</h2>
           <p style="text-indent: 150px;">Hello dskdsakd;askd;askd;askds;akd;aksd</p>
       </div>
     </section>
-    <section class="projectData">
-      <div class="par">
-        <h2 id="myProjects"> Past Projects</h2>
-        <img src="./imgs/par.png" alt="">
-      <p></p>
-      <p></p>
-      <p></p>
-    </div>
-  </section>
-    <div class="social-media">
-      <a href="https://www.linkedin.com/in/sean-reigle-4b7a15105/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-      <a href="https://github.com/sereigle"><i class="fa fa-github" aria-hidden="true"></i></a>
-    </div>
+    <section id="articles" class="tab content"></section>
+      <!-- <section id="about" class="top content"> -->
+      <div class="social-media">
+        <a href="https://www.linkedin.com/in/sean-reigle-4b7a15105/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+        <a href="https://github.com/sereigle"><i class="fa fa-github" aria-hidden="true"></i></a>
+      </div>
   <div class="footer">
     <footer>
       <h3><strong>Created by: </strong><i>Regal Media Design, LLC.</i></h3>
     </footer>
   </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="js/app.js"></script>
+
+  <script type="text/javascript" src="js/portfolio.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
+  <script type="text/javascript" src="js/projectView.js"></script>
+
   </body>
 </html>
