@@ -1,9 +1,8 @@
 
 html {
   max-height: 100%;
-  max-width: 100%
+  max-width: 100%;
   overflow: scroll;
-  overflow-x: hidden;
 }
 
 body {
@@ -14,7 +13,6 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: #000;
-  width: 100%;
  }
 
 h1 {
@@ -23,11 +21,20 @@ h1 {
   background: linear-gradient(to bottom, rgba(188,198,204,0.9) 0%, rgba(145,137,135,0.9) 20%, rgba(255,255,255,0.5) 100%);
   color: #FCFBE3;
   position: relative;
-  margin-top: 0.3em;
+  margin-top: 1.1em;
   text-align: center;
-  font-size: 4em;
+  font-size: 4.9vw;
   padding-top: 0.3em;
   padding-bottom: 0.3em;
+}
+
+.background {
+  text-align: center;
+}
+
+.background img {
+  width: 50%;
+  border: 0.2em solid black;
 }
 
 .nicknames {
@@ -36,9 +43,8 @@ h1 {
   text-align: center;
   padding-top: 1em;
   background-color: #E8E8E8
-  color: #333333;
-  font-size: 2em;
-
+  color: #333;
+  font-size: 3vw;
 }
 
 .middle {
@@ -52,15 +58,6 @@ h1 {
   padding-right: 0.5em;
   padding-bottom: 0.5em;
   padding-top: 0.5em;
-}
-
-.main-pic {
-  width: 16em;
-  height: 18em;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0, 0, 0, 0;
 }
 
 .social-media {
@@ -83,15 +80,15 @@ ul {
   background: linear-gradient(#FFF 0%, #bbbbbb 100%);
   box-shadow: 0px 0px 1em rgba(0,0,0,0.15);
   padding: 1em;
-  border-radius: 4em;
+  /*border-radius: 4em;*/
   border: 0.1em solid black;
+  display: inline-block;
 }
 
 li {
-  width:20%;
-  float:left;
-  border-right: 1px solid #eeee
-
+  width: 20%;
+  border-right: 1px solid #eeee;
+  display: inline-block;
 }
 
 li:last-child {
@@ -99,15 +96,16 @@ li:last-child {
 }
 
 li a {
-  display: block;
+  display: inline-block;
   width: 80%;
   background: #ddd;
   padding: 4% 10%;
   font-size: 1.1em;
   text-decoration: none;
+  text-align: center;
 }
 
-@media screen and (max-width: 768px) {
+@media screen (max-width: 767px) {
   #menu {
     width:1.4em;
     display: block;
@@ -115,73 +113,77 @@ li a {
     font-size:1.35em;
     text-align: center;
   }
+
   #nav.js {
     display: none;
-
-  }
-
-  ul {
-    width:100%;
-    list-style:none;
   }
 
   li {
     width:100%;
     border-right:none;
+    text-align: center;
   }
 }
 
-nav{
+nav {
+  position: absolute;
+  top: 0;
   width: 100%;
+  text-align: center;
 }
 
 nav ul li:hover > ul {
 	display: block;
-	}
+}
 
 nav ul {
-	background-color: #FFF;
-	background: linear-gradient(#FFF 0%, #bbbbbb 100%);
-	box-shadow: 0px 0px 9px rgba(0,0,0,0.15);
-	padding: 0 0 0 0;
-  width: 70vw;
-  border-radius: 23pt;
-  border: 1px solid black;
+	/*background: linear-gradient(#FFF 0%, #bbbbbb 100%);*/
+	/*box-shadow: 0px 0px 9px rgba(0,0,0,0.15);*/
   position: relative;
-  margin-top: 1em;
+	padding: 0 0 0 0;
+  border: 1px solid black;
+  margin-top: 0.7em;
+  text-align: center;
 }
 
 nav ul:after {
 	content: ""; clear: both; display: block;
-	}
-
-nav ul li {
-	float: left;
 }
 
 nav ul li:hover {
   color:inherit;
-	background: #8EA9B9;
-	background: linear-gradient(#8EA9B9 0%, #5f6975 40%);
-  border-top-left-radius:30px;
-  border-bottom-left-radius:30px;
-  border-top-right-radius:30px;
-  border-bottom-right-radius:30px;
+	background: #696E6A;
+	background: linear-gradient(#696E6A 0%, #918987 40%);
+  /*border-top-left-radius:28vw;
+  border-bottom-left-radius:28vw;
+  border-top-right-radius:28vw;
+  border-bottom-right-radius:28vw;*/
 }
 
 nav ul li:hover a {
   background-color: inherit;
   color: #FFF;
+  text-align: center;
 }
 
 nav ul li a {
   background-color: inherit;
-	display: block; padding: 25px 40px;
-	color: #757575; text-decoration: none;
+	display: block;
+  padding-top: 1.5vw;
+  padding-bottom: 1.5vw;
+	color: #000;
+  text-decoration: none;
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 767px) {
   #menu {
     display: none;
   }
+
+.footer {
+  position: absolute;
+  text-align: center;
+  padding-top: 0.5em;
+  font-size: 1.2vw;
+  margin-left: 33.5em;
 }
