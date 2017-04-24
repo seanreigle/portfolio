@@ -60,20 +60,6 @@ h1 {
   padding-top: 0.5em;
 }
 
-.social-media {
-  text-align: center;
-  font-size: 1.7em;
-  padding-top: 2em;
-}
-
-.fa-linkedin-square {
-  color: #8EA9B9;
-}
-
-.fa-github {
-  color: #8EA9B9;
-}
-
 ul {
   width:100%;
   background-color: #FFF;
@@ -179,6 +165,41 @@ nav ul li a {
   #menu {
     display: none;
   }
+  #about {
+    font-size: 3.9vw;
+    font-family: 'PT Sans', sans-serif;
+    padding-top: 5em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+  }
+
+#myProjects {
+  font-size: 3.9vw;
+  font-family: 'PT Sans', sans-serif;
+  padding-top: 5em;
+  padding-bottom: 1em;
+  padding-left: 1em;
+}
+
+.par img {
+  width: 35vw;
+  padding-left: 2vw;
+}
+
+
+.social-media {
+  text-align: center;
+  font-size: 1.7em;
+  padding-top: 2em;
+}
+
+.fa-linkedin-square {
+  color: #8EA9B9;
+}
+
+.fa-github {
+  color: #8EA9B9;
+}
 
 .footer {
   position: absolute;
