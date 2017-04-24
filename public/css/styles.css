@@ -165,7 +165,8 @@ nav ul li a {
   #menu {
     display: none;
   }
-  #about {
+
+  #about_me {
     font-size: 3.9vw;
     font-family: 'PT Sans', sans-serif;
     padding-top: 5em;
@@ -173,18 +174,27 @@ nav ul li a {
     padding-left: 1em;
   }
 
-#myProjects {
+#articles {
+  text-align: center;
+}
+
+#articles img {
+  width: 50%;
+  border: 0.1em solid black;
+}
+
+/*#myProjects {
   font-size: 3.9vw;
   font-family: 'PT Sans', sans-serif;
   padding-top: 5em;
   padding-bottom: 1em;
   padding-left: 1em;
-}
+}*/
 
-.par img {
+/*.par img {
   width: 35vw;
   padding-left: 2vw;
-}
+}*/
 
 
 .social-media {
