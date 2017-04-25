@@ -13,14 +13,14 @@ var projectData = [
     image: 'imgs/busmall.png',
     link: 'https://github.com/sereigle/bus-mall',
     deployedOn: '2017-03-24',
-    body: '?'
+    body: 'This project was designed to act as if it were being operated by a marketing research team allowing the focus group participants to select items that they generally would purchase and then produce results for the research team to view.'
   },
   {
     title: 'Cookie Stand',
     image: 'imgs/cookiestand.png',
     link: 'https://github.com/sereigle/cookie-stand',
     deployedOn: '2017-03-17',
-    body: '?'
+    body: 'This project was a mock-up store website that was selling salmon cookies. The purpose of this project was to allow the owner of Pat\'s Salmon Cookies to track his store sales and to have the ability to add new stores to a table to track cookie sales, average customers, store location, and other data.'
   },
   {
     title: 'About Me',
