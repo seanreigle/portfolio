@@ -5,7 +5,8 @@
   "main": "server.js",
   "dependencies": {
     "express": "^4.15.2",
-    "package.json": "^2.0.1"
+    "package.json": "^2.0.1",
+    "pg": "^6.1.5"
   },
   "devDependencies": {},
   "scripts": {
