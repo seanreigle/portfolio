@@ -1,5 +1,7 @@
 'use strict';
 
+//I will be refactoring my functions to lexical arrow functions//
+
 	$("#nav").addClass("js").before('<div id="menu">&#9776;</div>');
 	$("#menu").click(function(){
 		$("#nav").toggle();
