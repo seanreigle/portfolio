@@ -24,7 +24,7 @@
 	  var template = $('#article-template').html();
 	  var render = Handlebars.compile(template);
 	  this.daysAgo = parseInt((new Date() - new Date(this.deployedOn))/60/60/24/1000);
-	  this.publishStatus = this.deployedOn ? `published ${this.daysAgo} days ago` : '(draft)';
+		this.publishStatus = this.deployedOn ? 'published ${this.daysAgo} days ago' : '(draft)';
 	  return render(this);
 	};
 
