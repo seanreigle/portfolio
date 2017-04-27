@@ -6,45 +6,53 @@ html {
 }
 
 body {
-  background: rgba(145,137,135,0.9);
-  background: linear-gradient(to bottom, rgba(145,137,135,0.9) 0%, rgba(145,137,135,0.9) 60%, rgba(255,255,255,1) 100%);
+  /*background: rgba(3,0,0,0.9);
+  background: linear-gradient(to bottom, rgba(3,0,0,0.9) 0%, rgba(3,0,0,0.9) 40%, rgba(188,198,204,1) 100%);*/
   height: 2em;
   margin: 0;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  color: #000;
+  background: #000;
  }
 
 h1 {
   font-family: 'Rye', cursive;
-  background: rgba(105,110,106,0.4);
-  background: linear-gradient(to bottom, rgba(188,198,204,0.9) 0%, rgba(145,137,135,0.9) 20%, rgba(255,255,255,0.5) 100%);
-  color: #FCFBE3;
+  /*background: rgba(105,110,106,0.4);
+  background: linear-gradient(to bottom, rgba(188,198,204,0.9) 0%, rgba(145,137,135,0.9) 20%, rgba(255,255,255,0.5) 100%);*/
+  color: #FFF;
   position: relative;
   margin-top: 1.1em;
-  text-align: center;
-  font-size: 4.9vw;
-  padding-top: 0.3em;
+  text-align: right;
+  font-size: 3.5vw;
+  padding-top: 5em;
   padding-bottom: 0.3em;
+  padding-right: 3.3em;
 }
 
 .background {
-  text-align: center;
+  text-align: left;
+  padding-left: 0.5em;
 }
 
 .background img {
   width: 50%;
+  height: 100%;
   border: 0.2em solid black;
+  position: absolute;
+  top: 0;
+  padding-top: 0.58em;
+
 }
 
 .nicknames {
   font-family: 'Yesteryear', cursive;
   position: relative;
-  text-align: center;
+  text-align: right;
   padding-top: 1em;
-  background-color: #E8E8E8
-  color: #333;
-  font-size: 3vw;
+  padding-right: 5em;
+  /*background-color: #E8E8E8*/
+  color: #FFF;
+  font-size: 2vw;
 }
 
 .middle {
@@ -52,7 +60,7 @@ h1 {
   display: inline-block;
   transform: rotate(-15deg);
   transform: skewY(-15deg);
-  font-size: 0.6em;
+  font-size: 0.4em;
   text-decoration: underline;
   padding-left: 0.5em;
   padding-right: 0.5em;
@@ -114,7 +122,8 @@ li a {
 nav {
   position: absolute;
   top: 0;
-  width: 100%;
+  right: 0;
+  width: 48.6%;
   text-align: center;
 }
 
@@ -138,8 +147,8 @@ nav ul:after {
 
 nav ul li:hover {
   color:inherit;
-	background: #696E6A;
-	background: linear-gradient(#696E6A 0%, #918987 40%);
+	background: #000;
+	background: linear-gradient(#000 0%, #BCC6CC 100%);
   /*border-top-left-radius:28vw;
   border-bottom-left-radius:28vw;
   border-top-right-radius:28vw;
@@ -198,17 +207,20 @@ nav ul li a {
 
 
 .social-media {
-  text-align: center;
+  text-align: right;
   font-size: 1.7em;
-  padding-top: 2em;
+  padding-right: 2em;
+  position: absolute;
+  right: 8.5em;
+  top: 15em;
 }
 
 .fa-linkedin-square {
-  color: #8EA9B9;
+  color: #FFF;
 }
 
 .fa-github {
-  color: #8EA9B9;
+  color: #FFF;
 }
 
 .footer {
