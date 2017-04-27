@@ -40,20 +40,17 @@
 	  $('#projects').append(article.toHtml());
 	});
 
-	// $(document).on('click', 'a', function(event){
-	//     event.preventDefault();
-	//     $('html, body').animate({
-	//         scrollTop: $( $.attr(this, 'href') ).offset().top
-	//     }, 500);
-	// });
+	$(document).on('click', 'a', function(event){
+	    event.preventDefault();
+	    $('html, body').animate({
+	        scrollTop: $( $.attr(this, 'href') ).offset().top
+	    }, 500);
+	});
 
-	var $root = $('html, body');
-$('a').click(function() {
-    var href = $.attr(this, 'href');
-    $root.animate({
-        scrollTop: $(href).offset().top
-    }, 500, function () {
-        window.location.hash = href;
-    });
-    return false;
-});
+	$(window).bind("scroll", function() {
+	    if ($(this).scrollTop() > 520) {
+	        $("#me").fadeIn(1500);
+	    } else {
+	        $("#me").stop().fadeOut();
+	    }
+	});

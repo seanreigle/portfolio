@@ -120,7 +120,7 @@ li a {
 nav {
   position: absolute;
   top: 0;
-  right: 23em;
+  right: 23.2em;
   width: 40%;
   text-align: center;
 }
@@ -175,18 +175,46 @@ nav ul li a {
     display: none;
   }
 
-  #about_me {
-    color: #FFF;
-    font-size: 3.9vw;
-    font-family: 'PT Sans', sans-serif;
-    padding-top: 5em;
-    padding-bottom: 1em;
-    padding-left: 1em;
-  }
+#about_me {
+  color: #FFF;
+  font-size: 3vw;
+  font-family: 'PT Sans', sans-serif;
+  padding-top: 5em;
+  padding-bottom: 1em;
+  padding-left: 1em;
+  margin-left: 4.9em;
+}
+
+p {
+  text-indent: 3rem;
+  color: #FFF;
+  margin-right: 40em;
+  margin-left: 5em;
+  line-height: 1.8em;
+  font-size: 1.1em;
+}
+
+#me {
+  position: absolute;
+  top: 55.5em;
+  right: 15em;
+  height: 80%;
+}
+
+.project {
+  color: #FFF;
+  font-size: 3vw;
+  font-family: 'PT Sans', sans-serif;
+  padding-top: 10em;
+  padding-left: 1em;
+  margin-left: 4.9em;
+}
 
 #projects {
   color: #FFF;
-  text-align: center;
+  text-align: left;
+  margin-left: 5em;
+  padding-top: 5em;
 }
 
 #projects img {
@@ -212,10 +240,17 @@ nav ul li a {
   color: #FFF;
 }
 
+.fa-instagram {
+  color: #FFF;
+}
+
 .footer {
+  color: #FFF;
   position: absolute;
+  display: inline-block;
   text-align: center;
   padding-top: 0.5em;
   font-size: 1.2vw;
-  margin-left: 33.5em;
+  padding-top: 10em;
+  float:right;
 }
