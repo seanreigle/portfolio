@@ -6,6 +6,7 @@
   "dependencies": {
     "express": "^4.15.2",
     "package.json": "^2.0.1",
+    "page.js": "^4.13.3",
     "pg": "^6.1.5"
   },
   "devDependencies": {},

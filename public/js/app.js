@@ -39,5 +39,20 @@
 	});
 
 	articles.forEach(function(article) {
-	  $('#articles').append(article.toHtml());
+	  $('#projects').append(article.toHtml());
+	});
+
+	$(document).on('click', 'a', function(event){
+	    event.preventDefault();
+	    $('html, body').animate({
+	        scrollTop: $( $.attr(this, 'href') ).offset().top
+	    }, 500);
+	});
+
+	$(window).bind("scroll", function() {
+	    if ($(this).scrollTop() > 520) {
+	        $("#me").fadeIn(1500);
+	    } else {
+	        $("#me").stop().fadeOut();
+	    }
 	});
