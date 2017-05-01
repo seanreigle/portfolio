@@ -1,6 +1,6 @@
 'use strict';
 
-//I will be refactoring my functions to lexical arrow functions//
+(function () {
 
 	$("#nav").addClass("js").before('<div id="menu">&#9776;</div>');
 	$("#menu").click(function(){
@@ -42,12 +42,12 @@
 	  $('#projects').append(article.toHtml());
 	});
 
-	$(document).on('click', 'a', function(event){
-	    event.preventDefault();
-	    $('html, body').animate({
-	        scrollTop: $( $.attr(this, 'href') ).offset().top
-	    }, 500);
-	});
+	// $(document).on('click', 'a', function(event){
+	//     event.preventDefault();
+	//     $('html, body').animate({
+	//         scrollTop: $( $.attr(this, 'href') ).offset().top
+	//     }, 500);
+	// });
 
 	$(window).bind("scroll", function() {
 	    if ($(this).scrollTop() > 520) {
@@ -56,3 +56,5 @@
 	        $("#me").stop().fadeOut();
 	    }
 	});
+
+})();
